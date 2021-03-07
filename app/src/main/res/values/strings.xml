@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Attendance App</string>
+
+    <!-- SLIDER INTRO -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">Lanjut</string>
+    <string name="skip">Lewati</string>
+    <string name="start">MULAI</string>
+    <string name="slide1_title">DIGITAL ABSENSI</string>
+    <string name="slide1_desc">Kehadiran sistem absensi digital merupakan penemuan yang mampu menggantikan pencatatan data kehadiran secara manual</string>
+    <string name="slide2_title">ATTENDANCE SYSTEM</string>
+    <string name="slide2_desc">Pengelolaan karyawan di era digital yang baik, menghasilkan karyawan terbaik pula, salah satunya absensi karyawan</string>
+    <string name="slide3_title">SELALU PAKAI MASKER</string>
+    <string name="slide3_desc">Guna mencegah penyebaran virus Covid-19, Pemerintah telah mengeluarkan kebijakan Physical Distancing serta kebijakan bekerja, belajar, dan beribadah dari rumah.</string>
+    <string name="slide4_title">GUIDE</string>
+    <string name="slide4_desc">Cari Guide Untuk Menemani Perjalananmu Agar  semakin asyik</string>
+
+</resources>
