@@ -5,6 +5,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.iwon.attendance.adapter.MyViewPagerAdapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -49,12 +50,11 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         btnSkip = findViewById(R.id.btn_skip);
         btnNext = findViewById(R.id.btn_next);
 
-        // layout xml slide 1 sampai 4
+        // layout xml slide 1 sampai 3
         layouts = new int[]{
                 R.layout.slide1,
                 R.layout.slide2,
-                R.layout.slide3,
-                R.layout.slide4};
+                R.layout.slide3};
 
         // tombol dots
         addBottomDots(0);
@@ -86,7 +86,9 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void launchHomeScreen(){
-        Toast.makeText(this, "launch to home screen", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void addBottomDots(int currentPage){

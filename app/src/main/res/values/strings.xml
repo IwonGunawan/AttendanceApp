@@ -1,18 +1,21 @@
 <resources>
-    <string name="app_name">Attendance App</string>
+    <string name="app_name">Phintraco</string>
 
     <!-- SLIDER INTRO -->
     <string name="title_activity_welcome">Home Screen</string>
-    <string name="next">Lanjut</string>
-    <string name="skip">Lewati</string>
-    <string name="start">MULAI</string>
-    <string name="slide1_title">DIGITAL ABSENSI</string>
-    <string name="slide1_desc">Kehadiran sistem absensi digital merupakan penemuan yang mampu menggantikan pencatatan data kehadiran secara manual</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="slide1_title">DIGITAL ATTENDANCE</string>
+    <string name="slide1_desc">The presence of a digital attendance system is an invention that can replace manual attendance data recording</string>
     <string name="slide2_title">ATTENDANCE SYSTEM</string>
-    <string name="slide2_desc">Pengelolaan karyawan di era digital yang baik, menghasilkan karyawan terbaik pula, salah satunya absensi karyawan</string>
-    <string name="slide3_title">SELALU PAKAI MASKER</string>
-    <string name="slide3_desc">Guna mencegah penyebaran virus Covid-19, Pemerintah telah mengeluarkan kebijakan Physical Distancing serta kebijakan bekerja, belajar, dan beribadah dari rumah.</string>
-    <string name="slide4_title">GUIDE</string>
-    <string name="slide4_desc">Cari Guide Untuk Menemani Perjalananmu Agar  semakin asyik</string>
+    <string name="slide2_desc">Good employee management in the digital era also produces the best employees, one of which is employee attendance</string>
+    <string name="slide3_title">ALWAYS WEAR A MASK</string>
+    <string name="slide3_desc">In order to prevent the spread of the Covid-19 virus, the Government has issued a Physical Distancing policy as well as a policy of working, studying and worshiping from home.</string>
 
+    <!-- LANDING PAGE-->
+    <string name="btn_login_title">Login</string>
+    <string name="btn_signup_title">Sign Up</string>
+    <string name="landing_title">WELCOME</string>
+    <string name="landing_desc">Please use the button below to login or sign up</string>
 </resources>

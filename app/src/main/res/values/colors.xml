@@ -8,38 +8,39 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#0063C6</color>
+    <color name="grey">#77869E</color>
 
     <!-- SLIDER INTRO -->
     <!-- screen background color -->
     <color name="bg_screen_1">#0062CD</color>
     <color name="bg_screen_2">#006400</color>
-    <color name="bg_screen_3">#008B8B</color>
-    <color name="bg_screen_4">#8A2BE2</color>
+    <color name="bg_screen_4">#008B8B</color>
+    <color name="bg_screen_3">#8A2BE2</color>
 
     <!-- dots inactive color -->
     <color name="dot_dark_screen_1">#FFFFF0</color>
     <color name="dot_dark_screen_2">#FFFFF0</color>
     <color name="dot_dark_screen_3">#FFFFF0</color>
-    <color name="dot_dark_screen_4">#FFFFF0</color>
 
     <!-- dots active color -->
     <color name="dot_light_screen_1">#A9A9A9</color>
     <color name="dot_light_screen_2">#A9A9A9</color>
     <color name="dot_light_screen_3">#A9A9A9</color>
-    <color name="dot_light_screen_4">#A9A9A9</color>
 
     <array name="array_dot_inactive">
         <item>@color/dot_dark_screen_1</item>
         <item>@color/dot_dark_screen_2</item>
         <item>@color/dot_dark_screen_3</item>
-        <item>@color/dot_dark_screen_4</item>
     </array>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen_1</item>
         <item>@color/dot_light_screen_2</item>
         <item>@color/dot_light_screen_3</item>
-        <item>@color/dot_light_screen_4</item>
     </array>
+
+    <!-- LANDING PAGE -->
+    <color name="landing_bg">#F8F9F9</color>
+    <color name="landing_title">#042C5C</color>
 
 </resources>
