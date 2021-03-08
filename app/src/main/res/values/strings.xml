@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Phintraco</string>
 
     <!-- SLIDER INTRO -->
@@ -18,4 +18,14 @@
     <string name="btn_signup_title">Sign Up</string>
     <string name="landing_title">WELCOME</string>
     <string name="landing_desc">Please use the button below to login or sign up</string>
+
+    <!-- LOGIN PAGE -->
+    <string name="login_title">Welcome to Login</string>
+    <string name="login_desc">Please fill Username and password to login your app account</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="login_now">Login Now</string>
+    <string name="dont_have_account">Dont Have Account? please </string>
+    <string name="lbl_register">Register</string>
 </resources>

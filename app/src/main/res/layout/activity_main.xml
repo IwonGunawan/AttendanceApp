@@ -28,7 +28,7 @@
             android:id="@+id/tv_landing_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:layout_marginTop="15dp"
             android:textColor="@color/landing_title"
@@ -89,5 +89,10 @@
 
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fL_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>
