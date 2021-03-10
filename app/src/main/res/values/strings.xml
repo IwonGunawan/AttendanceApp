@@ -46,4 +46,9 @@
     <string name="forgot_ktp">No. KTP</string>
     <string name="reset_password">Reset Password</string>
 
+    <!-- BOTTOM NAVIGATION MENU -->
+    <string name="lbl_home">Home</string>
+    <string name="lbl_history">History</string>
+    <string name="lbl_profile">Profile</string>
+
 </resources>
