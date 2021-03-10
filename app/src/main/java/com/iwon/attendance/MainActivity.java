@@ -10,7 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.iwon.attendance.fragment.ForgotFragment;
 import com.iwon.attendance.fragment.LoginFragment;
+import com.iwon.attendance.fragment.SignupFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -52,6 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void toSignUp(){
-        Toast.makeText(this, "show dialog sign up", Toast.LENGTH_SHORT).show();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        SignupFragment signupFragment = new SignupFragment();
+        fragmentTransaction.add(R.id.fL_container, signupFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }

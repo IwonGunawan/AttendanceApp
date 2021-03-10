@@ -1,153 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".fragment.LoginFragment">
 
-    <ImageView
-        android:id="@+id/ivBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="12dp"
-        android:src="@drawable/ic_arrow_back" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/oval" />
-
-    <TextView
-        android:id="@+id/tv_login_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivBack"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="@dimen/login_margin_left"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="@string/login_title" />
-
-    <TextView
-        android:id="@+id/tv_login_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_login_title"
-        android:layout_marginLeft="@dimen/login_margin_left"
-        android:layout_marginRight="50dp"
-        android:textColor="@color/white"
-        android:layout_marginTop="12dp"
-        android:text="@string/login_desc"/>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="170dp"
-        android:background="@drawable/bg_bottom_landing"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_lbl_username"
+        <ImageView
+            android:id="@+id/ivBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_username"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="@dimen/login_margin_left"
-            android:textSize="16sp" />
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_arrow_back" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layout_username"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/oval" />
+
+        <TextView
+            android:id="@+id/tv_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBack"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/login_title" />
+
+        <TextView
+            android:id="@+id/tv_login_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login_title"
+            android:layout_marginLeft="@dimen/login_margin_left"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_desc"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/input_layout_height"
-            android:layout_marginLeft="@dimen/login_margin_left"
-            android:layout_marginRight="@dimen/login_margin_right"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/bg_bottom_landing"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_username"
+            <TextView
+                android:id="@+id/tv_lbl_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_username"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:textSize="@dimen/font_size_login_sign_up" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="@dimen/input_layout_height"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:layout_marginRight="@dimen/login_margin_right"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <TextView
-            android:id="@+id/tv_lbl_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_password"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="@dimen/login_margin_left"
-            android:textSize="16sp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/layout_password"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/input_layout_height"
-            android:layout_marginLeft="@dimen/login_margin_left"
-            android:layout_marginRight="@dimen/login_margin_right"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <TextView
+                android:id="@+id/tv_lbl_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:textSize="@dimen/font_size_login_sign_up" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_password"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_layout_height"
+                android:layout_marginLeft="@dimen/login_margin_left"
+                android:layout_marginRight="@dimen/login_margin_right"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginLeft="@dimen/login_margin_right"
+                android:layout_marginRight="@dimen/login_margin_right"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/blue"
+                android:text="@string/forgot_password" />
 
-        <TextView
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/login_margin_right"
+            android:layout_marginLeft="@dimen/login_margin_left"
             android:layout_marginRight="@dimen/login_margin_right"
-            android:textAlignment="textEnd"
-            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/tv_dont_have_account"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/login_now"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:layout_marginStart="80dp"
+            android:textSize="12sp"
+            android:text="@string/dont_have_account" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tv_dont_have_account"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="@string/lbl_register"
             android:textColor="@color/blue"
-            android:text="@string/forgot_password" />
-    </LinearLayout>
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="@dimen/login_margin_left"
-        android:layout_marginEnd="@dimen/login_margin_right"
-        android:background="@drawable/btn_yellow"
-        android:textAllCaps="false"
-        android:layout_above="@+id/tv_dont_have_account"
-        android:layout_marginBottom="15dp"
-        android:text="@string/login_now" />
-
-    <TextView
-        android:id="@+id/tv_dont_have_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:textAlignment="center"
-        android:textColor="@color/grey"
-        android:layout_marginStart="80dp"
-        android:textSize="12sp"
-        android:text="@string/dont_have_account" />
-
-    <TextView
-        android:id="@+id/tv_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:layout_toEndOf="@+id/tv_dont_have_account"
-        android:layout_marginLeft="5dp"
-        android:text="@string/lbl_register"
-        android:textColor="@color/blue"
-        android:textSize="12sp"
-        android:textStyle="bold" />
-
-</RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

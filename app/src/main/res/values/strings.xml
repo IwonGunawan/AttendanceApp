@@ -28,4 +28,22 @@
     <string name="login_now">Login Now</string>
     <string name="dont_have_account">Dont Have Account? please </string>
     <string name="lbl_register">Register</string>
+
+    <!-- SIGN UP PAGE -->
+    <string name="signup_title">Create your account</string>
+    <string name="signup_desc">Please fill Fullname, No. KTP, Ship and Password to register your app</string>
+    <string name="signup_username">Username</string>
+    <string name="signup_fullname">Full Name</string>
+    <string name="signup_password">Password</string>
+    <string name="repet_password">Repeat Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already Have Account? please</string>
+    <string name="lbl_login">Login</string>
+
+    <!-- FORGOT PASSWORD -->
+    <string name="forgot_title">Forgot password</string>
+    <string name="forgot_desc">Please No KTP, Password and Repeat Password to reset your account</string>
+    <string name="forgot_ktp">No. KTP</string>
+    <string name="reset_password">Reset Password</string>
+
 </resources>

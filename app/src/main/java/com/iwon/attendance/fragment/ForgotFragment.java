@@ -13,17 +13,19 @@ import android.widget.Toast;
 
 import com.iwon.attendance.R;
 
-public class SignupFragment extends Fragment implements View.OnClickListener {
+public class ForgotFragment extends Fragment implements View.OnClickListener {
 
     TextView tvLogin;
-    Button btnSignUp;
+    Button btnForgotPassword;
 
-    public SignupFragment() {
+    public ForgotFragment() {
         // Required empty public constructor
     }
 
-    public static SignupFragment newInstance(String param1, String param2) {
-        SignupFragment fragment = new SignupFragment();
+    public static ForgotFragment newInstance(String param1, String param2) {
+        ForgotFragment fragment = new ForgotFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -36,12 +38,12 @@ public class SignupFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_signup, container, false);
+        View view = inflater.inflate(R.layout.fragment_forgot, container, false);
 
-        btnSignUp = view.findViewById(R.id.btn_sign_up);
+        btnForgotPassword = view.findViewById(R.id.btn_forgot_password);
         tvLogin = view.findViewById(R.id.tv_login);
 
-        btnSignUp.setOnClickListener(this);
+        btnForgotPassword.setOnClickListener(this);
         tvLogin.setOnClickListener(this);
 
         return view;
@@ -50,8 +52,8 @@ public class SignupFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.btn_sign_up:
-                signUp();
+            case R.id.btn_forgot_password:
+                forgotPassword();
                 break;
 
             case R.id.tv_login:
@@ -60,14 +62,14 @@ public class SignupFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    private void signUp(){
-        Toast.makeText(getContext(), "Event Button Sign Up", Toast.LENGTH_SHORT).show();
+    private void forgotPassword(){
+        Toast.makeText(getContext(), "Event button Forgot Password Show", Toast.LENGTH_SHORT).show();
     }
 
     private void toLogin(){
         LoginFragment loginFragment = new LoginFragment();
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.frame_sign_up, loginFragment, "login_page")
+                .replace(R.id.frame_forgot, loginFragment)
                 .addToBackStack(null)
                 .commit();
     }
