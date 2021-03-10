@@ -1,5 +1,6 @@
 package com.iwon.attendance.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.iwon.attendance.DashboardActivity;
 import com.iwon.attendance.R;
 
 public class SignupFragment extends Fragment implements View.OnClickListener {
@@ -51,7 +53,7 @@ public class SignupFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn_sign_up:
-                signUp();
+                viewDashboard();
                 break;
 
             case R.id.tv_login:
@@ -70,5 +72,10 @@ public class SignupFragment extends Fragment implements View.OnClickListener {
                 .replace(R.id.frame_sign_up, loginFragment, "login_page")
                 .addToBackStack(null)
                 .commit();
+    }
+
+    public void viewDashboard(){
+        Intent intent = new Intent(getContext(), DashboardActivity.class);
+        startActivity(intent);
     }
 }
