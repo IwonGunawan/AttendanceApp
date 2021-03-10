@@ -15,6 +15,7 @@
     <!-- LOGIN -->
     <dimen name="login_margin_left">28dp</dimen>
     <dimen name="login_margin_right">28dp</dimen>
+    <dimen name="login_btn_height">60dp</dimen>
     <dimen name="input_layout_height">55dp</dimen>
     <dimen name="font_size_login_sign_up">14sp</dimen>
 
