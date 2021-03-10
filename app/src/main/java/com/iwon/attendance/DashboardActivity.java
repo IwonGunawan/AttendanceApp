@@ -27,8 +27,8 @@ public class DashboardActivity extends AppCompatActivity {
 
         bnvDashboard = findViewById(R.id.bnv_dashboard);
 
-        init();
         bottomNavigationMenu();
+        init();
     }
 
     private void init(){

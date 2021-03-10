@@ -9,7 +9,8 @@
     <FrameLayout
         android:id="@+id/frame_dashboard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bnv_dashboard"/>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

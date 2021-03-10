@@ -51,4 +51,16 @@
     <string name="lbl_history">History</string>
     <string name="lbl_profile">Profile</string>
 
+    <!-- HOME -->
+    <string name="home_title">Your Attendance</string>
+    <string name="lbl_check_in">check in</string>
+    <string name="lbl_check_out">check out</string>
+    <string name="lbl_location">Location</string>
+    <string name="dummy_title_1">PT. Phintraco Technology</string>
+    <string name="dummy_address_1">Jl. Lingkar Mega Kuningan Blok E3, The East Tower 12th Floor</string>
+    <string name="dummy_title_2">PT. BCA Tbk</string>
+    <string name="dummy_address_2">Jl. MH Thamrin No. 1, Menara BCA, Grand Indonesia</string>
+    <string name="dummy_title_3">Rumah</string>
+    <string name="dummy_address_3">Jakarta Selatan</string>
+
 </resources>

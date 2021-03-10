@@ -1,14 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/blue" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/oval" />
+
+        <ImageView
+            android:id="@+id/iv_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/home_margin_right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_notif" />
+
+        <TextView
+            android:id="@+id/tv_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/home_margin_left"
+            android:layout_toStartOf="@+id/iv_notif"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/home_title"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_box_check_in_out"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg_home_check_in_out"
+            android:layout_below="@+id/iv_notif"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_date_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:layout_alignParentLeft="true"
+                    android:text="Hour: 9:00" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:layout_alignParentRight="true"
+                    android:text="29 Januari 2021" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_check_in"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_check_in_out"
+                android:layout_below="@+id/rl_date_hour"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/avenir_black"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:text="@string/lbl_check_in"
+                app:backgroundTint="@color/bg_check_in"/>
+            <Button
+                android:id="@+id/btn_check_out"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_check_in_out"
+                android:layout_below="@+id/rl_date_hour"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/avenir_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="@string/lbl_check_out"
+                android:visibility="gone"
+                app:backgroundTint="@color/bg_check_out"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_box_check_in_out"
+            android:layout_marginLeft="@dimen/home_margin_left"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/landing_title"
+            android:text="@string/lbl_location" />
+
+        <RelativeLayout
+            android:id="@+id/rl_location_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/home_margin_left"
+            android:layout_marginRight="@dimen/home_margin_right"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_location_selected"
+            android:layout_below="@+id/tv_location">
+
+            <ImageView
+                android:id="@+id/iv_img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/img1" />
+            <TextView
+                android:id="@+id/tv_location_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/iv_img1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/dummy_title_1" />
+            <TextView
+                android:id="@+id/tv_location_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_img1"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tv_location_title1"
+                android:text="@string/dummy_address_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_location_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/home_margin_left"
+            android:layout_marginRight="@dimen/home_margin_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_location_unselected"
+            android:layout_below="@+id/rl_location_1">
+
+            <ImageView
+                android:id="@+id/iv_img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/img2" />
+            <TextView
+                android:id="@+id/tv_location_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/landing_title"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/iv_img2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/dummy_title_2" />
+            <TextView
+                android:id="@+id/tv_location_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_img2"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/landing_title"
+                android:layout_below="@+id/tv_location_title2"
+                android:text="@string/dummy_address_1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_location_3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/home_margin_left"
+            android:layout_marginRight="@dimen/home_margin_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_location_unselected"
+            android:layout_below="@+id/rl_location_2">
+
+            <ImageView
+                android:id="@+id/iv_img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/img3" />
+            <TextView
+                android:id="@+id/tv_location_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/landing_title"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/iv_img3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/dummy_title_3" />
+            <TextView
+                android:id="@+id/tv_location_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_img3"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/landing_title"
+                android:layout_below="@+id/tv_location_title3"
+                android:text="@string/dummy_address_1" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

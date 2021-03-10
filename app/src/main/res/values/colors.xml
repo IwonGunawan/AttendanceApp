@@ -43,5 +43,9 @@
     <!-- LANDING PAGE -->
     <color name="landing_bg">#F8F9F9</color>
     <color name="landing_title">#042C5C</color>
+    
+    <!-- HOME PAGE -->
+    <color name="bg_check_in">#11C04D</color>
+    <color name="bg_check_out">#F7B500</color>
 
 </resources>
