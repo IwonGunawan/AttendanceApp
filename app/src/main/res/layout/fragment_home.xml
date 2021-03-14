@@ -194,7 +194,7 @@
                 android:textSize="12sp"
                 android:textColor="@color/landing_title"
                 android:layout_below="@+id/tv_location_title2"
-                android:text="@string/dummy_address_1" />
+                android:text="@string/dummy_address_2" />
 
         </RelativeLayout>
 
@@ -236,7 +236,7 @@
                 android:textSize="12sp"
                 android:textColor="@color/landing_title"
                 android:layout_below="@+id/tv_location_title3"
-                android:text="@string/dummy_address_1" />
+                android:text="@string/dummy_address_3" />
 
         </RelativeLayout>
 
