@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AttendanceApp">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".DashboardActivity">
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
