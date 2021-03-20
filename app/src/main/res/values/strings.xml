@@ -53,8 +53,8 @@
 
     <!-- HOME -->
     <string name="home_title">Your Attendance</string>
-    <string name="lbl_check_in">check in</string>
-    <string name="lbl_check_out">check out</string>
+    <string name="lbl_check_in">CHECK IN</string>
+    <string name="lbl_check_out">CHECK OUT</string>
     <string name="lbl_location">Location</string>
     <string name="dummy_title_1">PT. Phintraco Technology</string>
     <string name="dummy_address_1">Jl. Lingkar Mega Kuningan Blok E3, The East Tower 12th Floor</string>
@@ -62,5 +62,21 @@
     <string name="dummy_address_2">Jl. MH Thamrin No. 1, Menara BCA, Grand Indonesia</string>
     <string name="dummy_title_3">Rumah</string>
     <string name="dummy_address_3">Jakarta Selatan</string>
+
+    <!-- HISTORY -->
+    <string name="history_title">Attendance History</string>
+    <string name="lbl_logs">Logs</string>
+    <string name="lbl_day">Day</string>
+    <string name="lbl_week">Week</string>
+    <string name="lbl_month">Month</string>
+    <string name="lbl_year">Year</string>
+    <string-array name="history_tab_label">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+    <string name="history_row_check_in">Check In - PT Phintech - 08:00</string>
+    <string name="history_row_check_out">Check Out - PT Phintech - 17:00</string>
 
 </resources>

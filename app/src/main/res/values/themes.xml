@@ -13,6 +13,8 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/avenir_roman</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="Theme.AttendanceApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

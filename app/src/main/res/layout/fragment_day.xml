@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.history.DayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_log_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/tab_margin_left"
+            android:layout_marginRight="@dimen/tab_margin_right"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/img1" />
+            <TextView
+                android:id="@+id/tv_location_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/iv_img1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/history_row_check_in" />
+            <TextView
+                android:id="@+id/tv_location_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_img1"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/landing_title"
+                android:layout_below="@+id/tv_location_title1"
+                android:text="@string/dummy_address_1" />
+        </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/rl_log_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/tab_margin_left"
+        android:layout_marginRight="@dimen/tab_margin_right"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/img1" />
+        <TextView
+            android:id="@+id/tv_location_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/iv_img2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/history_row_check_out" />
+        <TextView
+            android:id="@+id/tv_location_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_img2"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/landing_title"
+            android:layout_below="@+id/tv_location_title2"
+            android:text="@string/dummy_address_1" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
