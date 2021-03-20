@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Phintraco</string>
+    <string name="app_name">Attendance</string>
 
     <!-- SLIDER INTRO -->
     <string name="title_activity_welcome">Home Screen</string>
